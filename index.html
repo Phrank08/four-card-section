@@ -1,13 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Four card layout</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="favicon-32x32">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- 1️⃣ Include Tailwind’s CDN script -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Four cards section</title>
+</head>
+
+
+<body class="bg-[hsl(0,0%,100%)] py-20">
+  <section class="font-poppins flex items-center justify-center mb-20 sm:flex-col">
+    <div class="flex flex-col items-center justify-center w-full max-w-[1200px] px-4">
+      <h1 class="font-thin text-2xl sm:text-3xl md:text-4xl text-center text-[hsl(212,6%,44%)]">Reliable, efficient delivery</h1>
+      <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-[hsl(234,12%,34%)] mt-2">Powered by Technology</h1>
+
+      <p class="text-[hsl(212,6%,44%)] mt-4 text-center text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl">Our Artificial Intelligence powered tools use millions of project <br> data points to ensure that your project is successful</p>
+    </div>
+
+  </section>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-6 max-w-[1200px] mx-auto px-4 justify-items-center">
+
+    
+    <div class="bg-white p-6 rounded shadow-xl border-t-4 border-[hsl(180,62%,55%)] w-full max-w-xs md:w-80 md:col-start-1 md:row-start-2">
+      <h3 class="text-xl font-bold text-[hsl(234,12%,34%)]">Supervisor</h3>
+      <p class="text-[hsl(212,6%,44%)] text-[18px]">Monitors activity to identify project roadblocks</p>
+      <div class="mt-4 flex justify-end">
+        <img src="images/icon-supervisor.svg" alt="icon-supervisor" class="w-14 h-14">
+      </div>
+    </div>
+  
+    
+    <div class="bg-white p-6 rounded shadow-xl border-t-4 border-[hsl(0,78%,62%)] w-full max-w-xs md:w-80 md:col-start-2 md:row-start-2 md:-translate-y-20">
+      <h3 class="text-xl font-bold text-[hsl(234,12%,34%)]">Team Builder</h3>
+      <p class="text-[hsl(212,6%,44%)] text-[18px]">Scans our talent network to create the optimal team for your project</p>
+      <div class="mt-4 flex justify-end">
+        <img src="images/icon-team-builder.svg" alt="icon-team-builder" class="w-14 h-14">
+      </div>
+    </div>
+  
+    
+    <div class="bg-white p-6 rounded shadow-xl border-t-4 border-[hsl(34,97%,64%)] w-full max-w-xs md:w-80 md:col-start-2 md:row-start-3">
+      <h3 class="text-xl font-bold text-[hsl(234,12%,34%)]">Karma</h3>
+      <p class="text-[hsl(212,6%,44%)] text-[18px]">Regularly evaluates our talent to ensure quality</p>
+      <div class="mt-4 flex justify-end">
+        <img src="images/icon-karma.svg" alt="icon-karma" class="w-14 h-14">
+      </div>
+    </div>
+  
+    
+    <div class="bg-white p-6 rounded shadow-xl border-t-4 border-[hsl(212,86%,64%)] w-full max-w-xs md:w-80 md:col-start-3 md:row-start-2">
+      <h3 class="text-xl font-bold text-[hsl(234,12%,34%)]">Calculator</h3>
+      <p class="text-[hsl(212,6%,44%)] text-[18px]">Uses data from past projects to provide better delivery estimates</p>
+      <div class="mt-4 flex justify-end">
+        <img src="images/icon-calculator.svg" alt="icon-calculator" class="w-14 h-14">
+      </div>
+    </div>
+  
+  </div>
+  
+  
+
+</body>
